@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/colors.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/typography.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/styles.css">
+<script src="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/_ds_bundle.js"></script>
+</helmet>
+<header style="{{ headerStyle }}">
+  <div style="{{ barStyle }}">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;user-select:none">
+      <img src="assets/logo-mark.png" alt="Nuumeric" style="height:34px;width:auto;display:block">
+      <span style="{{ wordmarkStyle }}">NUUMERIC</span>
+    </a>
+
+    <nav style="{{ desktopNavStyle }}">
+      <a href="Home.dc.html" style="{{ linkHome }}">Home</a>
+      <a href="Services.dc.html" style="{{ linkServices }}">Services</a>
+      <a href="About.dc.html" style="{{ linkAbout }}">About Us</a>
+      <a href="WhatToExpect.dc.html" style="{{ linkExpect }}">What to Expect</a>
+      <a href="Blog.dc.html" style="{{ linkBlog }}">Blog</a>
+      <a href="Contact.dc.html" style="{{ linkContact }}">Contact</a>
+    </nav>
+
+    <div style="{{ desktopActionsStyle }}">
+      <div style="display:flex;align-items:center;gap:2px">
+        <a href="https://www.linkedin.com/company/nuumeric/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="{{ socialStyle }}"><span style="{{ socialIconLinkedin }}"></span></a>
+        <a href="https://www.instagram.com/nuumericinc" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="{{ socialStyle }}"><span style="{{ socialIconInstagram }}"></span></a>
+        <a href="https://www.facebook.com/people/Nuumeric-Inc/61586619862905/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="{{ socialStyle }}"><span style="{{ socialIconFacebook }}"></span></a>
+        <a href="http://wa.me/19363375446" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="{{ socialStyle }}"><span style="{{ socialIconWhatsapp }}"></span></a>
+      </div>
+      <a href="tel:19363375446" style="{{ phoneBtnStyle }}">
+        <span style="{{ phoneIconStyle }}"></span>
+        1 (936) 337-5446
+      </a>
+    </div>
+
+    <button type="button" onClick="{{ toggleMobile }}" aria-label="Toggle menu" style="{{ burgerStyle }}">
+      <span style="{{ burgerIcon }}"></span>
+    </button>
+  </div>
+
+  <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid #eceeec;background:#fff">
+      <nav style="max-width:1280px;margin:0 auto;padding:12px 24px;display:flex;flex-direction:column">
+        <a href="Home.dc.html" style="{{ mobileLinkStyle }}">Home</a>
+        <a href="Services.dc.html" style="{{ mobileLinkStyle }}">Services</a>
+        <a href="About.dc.html" style="{{ mobileLinkStyle }}">About Us</a>
+        <a href="WhatToExpect.dc.html" style="{{ mobileLinkStyle }}">What to Expect</a>
+        <a href="Blog.dc.html" style="{{ mobileLinkStyle }}">Blog</a>
+        <a href="Contact.dc.html" style="{{ mobileLinkStyle }}">Contact</a>
+        <div style="margin-top:8px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #eceeec;padding:16px 12px 8px">
+          <div style="display:flex;align-items:center;gap:2px">
+            <a href="https://www.linkedin.com/company/nuumeric/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display:inline-flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:9999px"><span style="{{ mobileSocialLinkedin }}"></span></a>
+            <a href="https://www.instagram.com/nuumericinc" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="display:inline-flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:9999px"><span style="{{ mobileSocialInstagram }}"></span></a>
+            <a href="https://www.facebook.com/people/Nuumeric-Inc/61586619862905/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="display:inline-flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:9999px"><span style="{{ mobileSocialFacebook }}"></span></a>
+            <a href="http://wa.me/19363375446" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="display:inline-flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:9999px"><span style="{{ mobileSocialWhatsapp }}"></span></a>
+          </div>
+          <a href="tel:19363375446" style="font-size:14px;font-weight:600;color:#2e933c;text-decoration:none">1 (936) 337-5446</a>
+        </div>
+      </nav>
+    </div>
+  </sc-if>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:72},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;services&quot;,&quot;about&quot;,&quot;expect&quot;,&quot;blog&quot;,&quot;contact&quot;,&quot;none&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;darkHero&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const GREEN = "#39b54a";
+const PRIMARY = "#2e933c";
+const INK_FG = "#f7f8f7";
+const FG = "#101210";
+
+function mask(name, size, color) {
+  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
+}
+
+class Component extends DCLogic {
+  state = { scrolled: false, mobileOpen: false, narrow: false };
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const s = window.scrollY > 12;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    this._onScroll();
+    window.addEventListener("scroll", this._onScroll, { passive: true });
+
+    this._mq = window.matchMedia("(max-width: 1023px)");
+    this._onMq = () => this.setState({ narrow: this._mq.matches, mobileOpen: false });
+    this._onMq();
+    this._mq.addEventListener("change", this._onMq);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this._onScroll);
+    this._mq && this._mq.removeEventListener("change", this._onMq);
+  }
+
+  renderVals() {
+    const { narrow, mobileOpen } = this.state;
+    const darkHero = this.props.darkHero ?? true;
+    const onDark = darkHero && !this.state.scrolled && !mobileOpen;
+    const active = this.props.active ?? "home";
+
+    const link = key => {
+      const isActive = key === active;
+      const color = isActive
+        ? (onDark ? GREEN : PRIMARY)
+        : (onDark ? "rgba(247,248,247,0.8)" : "rgba(16,18,16,0.7)");
+      return `position:relative;white-space:nowrap;border-radius:6px;padding:8px 14px;font-family:var(--font-body);font-size:14px;font-weight:500;text-decoration:none;transition:color .2s;color:${color};${isActive ? `box-shadow:inset 0 -1px 0 0 ${GREEN}` : ""}`;
+    };
+
+    const solid = this.state.scrolled || mobileOpen;
+
+    return {
+      mobileOpen,
+      headerStyle: `position:fixed;left:0;right:0;top:0;z-index:50;transition:background-color .3s,box-shadow .3s;${
+        solid
+          ? "background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 0 #eceeec,0 8px 30px -18px rgba(0,0,0,.25)"
+          : "background:transparent"
+      }`,
+      barStyle: `max-width:1280px;margin:0 auto;padding:0 ${narrow ? 20 : 32}px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px`,
+      wordmarkStyle: `font-family:var(--font-display);font-size:${narrow ? 20 : 23}px;font-weight:800;letter-spacing:-0.01em;line-height:1;color:${onDark ? INK_FG : FG}`,
+      desktopNavStyle: narrow ? "display:none" : "display:flex;align-items:center;gap:2px",
+      desktopActionsStyle: narrow ? "display:none" : "display:flex;align-items:center;gap:10px",
+      burgerStyle: narrow
+        ? "display:inline-flex;height:40px;width:40px;align-items:center;justify-content:center;border:0;border-radius:6px;background:transparent;cursor:pointer"
+        : "display:none",
+      burgerIcon: mask(mobileOpen ? "x" : "menu", 22, onDark ? INK_FG : PRIMARY),
+      toggleMobile: () => this.setState(s => ({ mobileOpen: !s.mobileOpen })),
+      mobileLinkStyle: "border-radius:6px;padding:12px;font-family:var(--font-body);font-size:16px;font-weight:500;color:rgba(16,18,16,0.8);text-decoration:none",
+      linkHome: link("home"),
+      linkServices: link("services"),
+      linkAbout: link("about"),
+      linkExpect: link("expect"),
+      linkBlog: link("blog"),
+      linkContact: link("contact"),
+      socialStyle: "display:inline-flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:9999px;text-decoration:none;opacity:.75;transition:opacity .2s",
+      socialIconLinkedin: mask("linkedin", 16, onDark ? INK_FG : PRIMARY),
+      socialIconInstagram: mask("instagram", 16, onDark ? INK_FG : PRIMARY),
+      socialIconFacebook: mask("facebook", 16, onDark ? INK_FG : PRIMARY),
+      socialIconWhatsapp: mask("message-circle", 16, onDark ? INK_FG : PRIMARY),
+      mobileSocialLinkedin: mask("linkedin", 16, PRIMARY),
+      mobileSocialInstagram: mask("instagram", 16, PRIMARY),
+      mobileSocialFacebook: mask("facebook", 16, PRIMARY),
+      mobileSocialWhatsapp: mask("message-circle", 16, PRIMARY),
+      phoneBtnStyle: `display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 20px;border-radius:9999px;font-family:var(--font-body);font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.08);transition:background-color .15s;background:${onDark ? GREEN : PRIMARY};color:#fff`,
+      phoneIconStyle: mask("phone", 14, "#ffffff"),
+    };
+  }
+}
+</script>
+</body>
+</html>

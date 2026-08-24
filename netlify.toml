@@ -1,0 +1,16 @@
+[build]
+  publish = "dist"
+
+# Each page is a folder index.html, so URLs are clean with no config:
+#   /  /services  /about  /what-to-expect  /careers  /contact  /refer  /blog
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

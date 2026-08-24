@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/colors.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/typography.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/styles.css">
+<script src="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/_ds_bundle.js"></script>
+<style>
+  body { margin:0; background:#fff; color:#101210; font-family:'Inter',ui-sans-serif,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:#2e933c; }
+  a:hover { color:#257430; }
+
+  @media (max-width:1023px){
+    [data-split]{grid-template-columns:1fr!important;gap:40px!important}
+    [data-cols="4"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-cols="3"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-sticky]{position:static!important}
+  }
+  @media (max-width:639px){
+    [data-cols]{grid-template-columns:1fr!important}
+    [data-cols]>*{grid-column:auto!important}
+  }
+</style>
+</helmet>
+
+<dc-import name="SiteNav" active="none" dark-hero="{{ true }}" hint-size="100%,72px"></dc-import>
+
+<section style="background:#1c211c;color:#f7f8f7;padding:clamp(112px,13vw,160px) 0 clamp(52px,7vw,80px)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Careers</p>
+    <h1 style="margin:16px 0 0;max-width:48rem;font-family:'Nunito Sans',sans-serif;font-size:clamp(34px,5.2vw,64px);font-weight:800;line-height:1.08;letter-spacing:-0.02em;text-wrap:balance">Do work that adds up</h1>
+    <p style="margin:20px 0 0;max-width:42rem;font-size:18px;line-height:1.7;color:rgba(247,248,247,0.75)">We're a boutique, US-based team helping growing enterprises keep their books clean, their payroll on time, and their decisions grounded in real numbers. If that sounds like your kind of work, we'd love to meet you.</p>
+    <div style="margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+      <a href="https://careers.nuumeric.com/jobs/Careers" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 clamp(20px,3vw,32px);border-radius:9999px;background:#39b54a;color:#fff;font-size:16px;font-weight:600;text-decoration:none" style-hover="background:#2e933c">View Open Positions <span style="{{ iconExternal }}"></span></a>
+      <p style="margin:0;font-size:14px;color:rgba(247,248,247,0.6)">Opens our career portal in a new tab</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(56px,8vw,96px) 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Why Nuumeric</p>
+    <h2 style="margin:12px 0 0;max-width:42rem;font-family:'Nunito Sans',sans-serif;font-size:clamp(27px,3.2vw,40px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210;text-wrap:balance">What it's like to work here</h2>
+    <div data-cols="2" style="margin-top:48px;display:grid;gap:24px;grid-template-columns:1fr 1fr">
+      <div style="display:flex;gap:20px;border:1px solid #eceeec;border-radius:10px;background:#fff;padding:28px;box-shadow:0 1px 2px rgba(0,0,0,0.04);transition:box-shadow .2s" style-hover="box-shadow:0 12px 28px -14px rgba(0,0,0,0.18)">
+        <div style="display:flex;height:48px;width:48px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.08)"><span style="{{ iconTeam }}"></span></div>
+        <div>
+          <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700;color:#101210">Boutique team, real relationships</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:#454e46">You won't be a cog in a call center. Our bookkeepers work directly with their own clients and build relationships that last years.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;border:1px solid #eceeec;border-radius:10px;background:#fff;padding:28px;box-shadow:0 1px 2px rgba(0,0,0,0.04);transition:box-shadow .2s" style-hover="box-shadow:0 12px 28px -14px rgba(0,0,0,0.18)">
+        <div style="display:flex;height:48px;width:48px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.08)"><span style="{{ iconTools }}"></span></div>
+        <div>
+          <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700;color:#101210">Modern cloud tools</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:#454e46">Zoho Books, Xero, QuickBooks Online, Gusto, SurePayroll — we work in the platforms that define modern accounting, and we'll keep you certified in them.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;border:1px solid #eceeec;border-radius:10px;background:#fff;padding:28px;box-shadow:0 1px 2px rgba(0,0,0,0.04);transition:box-shadow .2s" style-hover="box-shadow:0 12px 28px -14px rgba(0,0,0,0.18)">
+        <div style="display:flex;height:48px;width:48px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.08)"><span style="{{ iconFlex }}"></span></div>
+        <div>
+          <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700;color:#101210">Flexibility that works</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:#454e46">Structured processes and clear expectations, without the rigid big-firm grind. We measure results, not hours in a seat.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;border:1px solid #eceeec;border-radius:10px;background:#fff;padding:28px;box-shadow:0 1px 2px rgba(0,0,0,0.04);transition:box-shadow .2s" style-hover="box-shadow:0 12px 28px -14px rgba(0,0,0,0.18)">
+        <div style="display:flex;height:48px;width:48px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.08)"><span style="{{ iconGrow }}"></span></div>
+        <div>
+          <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700;color:#101210">Room to grow</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:#454e46">As our clients grow, so do the opportunities — from bookkeeping into advisory, payroll, systems consulting, and client leadership.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dc-import name="CredentialsBar" variant="dark" hint-size="100%,84px"></dc-import>
+
+<section style="padding:clamp(52px,7vw,80px) 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);text-align:center">
+    <h2 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:clamp(27px,3.2vw,40px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210;text-wrap:balance">Ready to see what's open?</h2>
+    <p style="margin:12px auto 0;max-width:36rem;font-size:16px;line-height:1.7;color:#454e46">Browse current openings and apply directly through our career portal. New roles are posted as our client base grows.</p>
+    <a href="https://careers.nuumeric.com/jobs/Careers" target="_blank" rel="noopener noreferrer" style="margin-top:32px;display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 clamp(20px,3vw,32px);border-radius:9999px;background:#2e933c;color:#fff;font-size:16px;font-weight:600;text-decoration:none" style-hover="background:#257430">Visit the Career Portal <span style="{{ iconArrowUpRight }}"></span></a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,460px"></dc-import>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="12" fill="#39b54a"/><path d="M36 70V30l28 40V30" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></template>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+function mask(name, size, color) {
+  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
+}
+
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      iconExternal: mask("external-link", 16, "#ffffff"),
+      iconArrowUpRight: mask("arrow-up-right", 16, "#ffffff"),
+      iconTeam: mask("heart-handshake", 24, "#2e933c"),
+      iconTools: mask("laptop", 24, "#2e933c"),
+      iconFlex: mask("clock", 24, "#2e933c"),
+      iconGrow: mask("trending-up", 24, "#2e933c"),
+    };
+  }
+}
+</script>
+</body>
+</html>

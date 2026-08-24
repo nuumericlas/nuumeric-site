@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/colors.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/typography.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/styles.css">
+<script src="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  body { margin:0; background:#fff; color:#101210; font-family:'Inter',ui-sans-serif,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:#2e933c; }
+  a:hover { color:#257430; }
+
+  @media (max-width:1023px){
+    [data-split]{grid-template-columns:1fr!important;gap:40px!important}
+    [data-cols="4"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-cols="3"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-sticky]{position:static!important}
+  }
+  @media (max-width:639px){
+    [data-cols]{grid-template-columns:1fr!important}
+    [data-cols]>*{grid-column:auto!important}
+  }
+</style>
+</helmet>
+
+<dc-import name="SiteNav" active="services" dark-hero="{{ true }}" hint-size="100%,72px"></dc-import>
+
+<section style="background:#1c211c;color:#f7f8f7;padding:clamp(112px,13vw,160px) 0 clamp(52px,7vw,80px)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">What We Do</p>
+    <h1 style="margin:16px 0 0;max-width:48rem;font-family:'Nunito Sans',sans-serif;font-size:clamp(34px,5.2vw,64px);font-weight:800;line-height:1.08;letter-spacing:-0.02em;text-wrap:balance">Services built around your business</h1>
+    <p style="margin:20px 0 0;max-width:42rem;font-size:18px;line-height:1.7;color:rgba(247,248,247,0.75)">Four service areas, delivered by US-based professionals who scale with you. Explore each below — or tell us what you need and we'll shape the engagement around it.</p>
+  </div>
+</section>
+
+<dc-import name="CredentialsBar" variant="light" hint-size="100%,84px"></dc-import>
+
+<section id="bookkeeping" style="padding:clamp(56px,8vw,96px) 0;scroll-margin-top:96px">
+  <div data-split style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);display:grid;align-items:center;gap:56px;grid-template-columns:1fr 1fr">
+    <div style="position:relative">
+      <div aria-hidden="true" style="position:absolute;inset:-12px;border:1px solid rgba(57,181,74,0.3);border-radius:16px;pointer-events:none"></div>
+      <div style="position:relative;aspect-ratio:4/3;width:100%;border-radius:10px;overflow:hidden;box-shadow:0 16px 36px -18px rgba(0,0,0,0.3)">
+        <image-slot id="svc-bookkeeping" shape="rect" fit="cover" placeholder="Drop the bookkeeping photo"></image-slot>
+      </div>
+    </div>
+    <div>
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Core Service</p>
+      <h2 style="margin:12px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(28px,3.6vw,44px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210">Bookkeeping</h2>
+      <p style="margin:20px 0 0;font-size:16px;line-height:1.7;color:#454e46">Clean, current, and accurate books are the foundation of every sound business decision. Nuumeric's US-based team keeps your ledgers reconciled and your reports meaningful, whether you need weekly transaction entry or full-cycle monthly close.</p>
+      <ul style="margin:28px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Bank and credit card reconciliations</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Customer invoicing and receivables</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Accounts payable management</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Monthly financial reporting</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Catch-up and clean-up bookkeeping</span></li>
+      </ul>
+      <div style="margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+        <a href="Contact.dc.html" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 24px;border-radius:9999px;background:#2e933c;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#257430">Request a Quote <span style="{{ arrowWhite }}"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tax-preparation" style="border-top:1px solid #eceeec;border-bottom:1px solid #eceeec;background:#f7f8f7;padding:clamp(56px,8vw,96px) 0;scroll-margin-top:96px">
+  <div data-split style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);display:grid;align-items:center;gap:56px;grid-template-columns:1fr 1fr">
+    <div>
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Core Service</p>
+      <h2 style="margin:12px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(28px,3.6vw,44px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210">Tax Preparation</h2>
+      <p style="margin:20px 0 0;font-size:16px;line-height:1.7;color:#454e46">Tax season shouldn't be a scramble. With books maintained year-round and nearly three decades of hands-on experience behind every return, Nuumeric prepares your filings thoroughly and on time — and helps you plan ahead, not just look back. We prepare both business and individual returns, so owners can keep their company and personal filings under one roof rather than coordinating between two preparers.</p>
+      <ul style="margin:28px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Small business tax return preparation</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Individual (personal) tax return preparation</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Owner returns handled alongside the business</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Year-round tax planning support</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Quarterly estimated tax guidance</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Coordination with your CPA when needed</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Organized, audit-ready records</span></li>
+      </ul>
+      <div style="margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+        <a href="Contact.dc.html" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 24px;border-radius:9999px;background:#2e933c;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#257430">Request a Quote <span style="{{ arrowWhite }}"></span></a>
+        <a href="#individual-tax-returns" style="display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(46,147,60,0.3);border-radius:9999px;padding:9px 20px;font-size:14px;font-weight:500;color:#2e933c;text-decoration:none" style-hover="background:rgba(46,147,60,0.1)">Filing as an individual? <span style="{{ arrowSmall }}"></span></a>
+      </div>
+    </div>
+    <div style="position:relative">
+      <div aria-hidden="true" style="position:absolute;inset:-12px;border:1px solid rgba(46,147,60,0.2);border-radius:16px;pointer-events:none"></div>
+      <div style="position:relative;aspect-ratio:4/3;width:100%;border-radius:10px;overflow:hidden;box-shadow:0 16px 36px -18px rgba(0,0,0,0.3)">
+        <image-slot id="svc-tax" shape="rect" fit="cover" placeholder="Drop the tax preparation photo"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="payroll-processing" style="padding:clamp(56px,8vw,96px) 0;scroll-margin-top:96px">
+  <div data-split style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);display:grid;align-items:center;gap:56px;grid-template-columns:1fr 1fr">
+    <div style="position:relative">
+      <div aria-hidden="true" style="position:absolute;inset:-12px;border:1px solid rgba(57,181,74,0.3);border-radius:16px;pointer-events:none"></div>
+      <div style="position:relative;aspect-ratio:4/3;width:100%;border-radius:10px;overflow:hidden;box-shadow:0 16px 36px -18px rgba(0,0,0,0.3)">
+        <image-slot id="svc-payroll" shape="rect" fit="cover" placeholder="Drop the payroll photo"></image-slot>
+      </div>
+    </div>
+    <div>
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Core Service</p>
+      <h2 style="margin:12px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(28px,3.6vw,44px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210">Payroll Processing</h2>
+      <p style="margin:20px 0 0;font-size:16px;line-height:1.7;color:#454e46">Your people are your business — paying them accurately and on schedule is non-negotiable. As a Gusto Payroll partner and SurePayroll Accountant, Nuumeric runs payroll end to end so you never miss a run, a filing, or a deadline.</p>
+      <ul style="margin:28px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Full-service payroll runs</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Gusto Payroll administration</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">SurePayroll Accountant support</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Payroll tax filings and deposits</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">New hire onboarding support</span></li>
+      </ul>
+      <div style="margin-top:36px">
+        <a href="Contact.dc.html" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 24px;border-radius:9999px;background:#2e933c;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#257430">Request a Quote <span style="{{ arrowWhite }}"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="additional-services" style="border-top:1px solid #eceeec;border-bottom:1px solid #eceeec;background:#f7f8f7;padding:clamp(56px,8vw,96px) 0;scroll-margin-top:96px">
+  <div data-split style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);display:grid;align-items:center;gap:56px;grid-template-columns:1fr 1fr">
+    <div>
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Beyond the Books</p>
+      <h2 style="margin:12px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(28px,3.6vw,44px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210">Additional Services</h2>
+      <p style="margin:20px 0 0;font-size:16px;line-height:1.7;color:#454e46">Modern back offices run on modern tools. As a Zoho Finance Advisor with Xero Advisor and QuickBooks ProAdvisor certifications, Nuumeric helps you choose, implement, and get the most from the platforms that power your business.</p>
+      <ul style="margin:28px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Migrations to Zoho Books</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Zoho CRM support and configuration</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Xero setup, migration, and advisory</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">QuickBooks setup and ongoing support</span></li>
+        <li style="display:flex;align-items:flex-start;gap:12px"><span style="{{ checkWrap }}"><span style="{{ check }}"></span></span><span style="font-size:14px;color:rgba(16,18,16,0.85)">Human resources and financial reporting</span></li>
+      </ul>
+      <div style="margin-top:36px">
+        <a href="Contact.dc.html" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 24px;border-radius:9999px;background:#2e933c;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#257430">Request a Quote <span style="{{ arrowWhite }}"></span></a>
+      </div>
+    </div>
+    <div style="position:relative">
+      <div aria-hidden="true" style="position:absolute;inset:-12px;border:1px solid rgba(46,147,60,0.2);border-radius:16px;pointer-events:none"></div>
+      <div style="position:relative;aspect-ratio:4/3;width:100%;border-radius:10px;overflow:hidden;box-shadow:0 16px 36px -18px rgba(0,0,0,0.3)">
+        <image-slot id="svc-additional" shape="rect" fit="cover" placeholder="Drop the software/CRM photo"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="individual-tax-returns" style="border-top:1px solid #eceeec;background:#1c211c;color:#f7f8f7;padding:clamp(56px,8vw,96px) 0;scroll-margin-top:96px">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <div style="max-width:48rem">
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Individual Returns</p>
+      <h2 style="margin:16px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(30px,4vw,48px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;text-wrap:balance">Your personal return, handled remotely</h2>
+      <p style="margin:20px 0 0;font-size:18px;line-height:1.7;color:rgba(247,248,247,0.75)">We prepare individual returns for business owners and for individuals who simply want their return done properly. The whole process runs remotely — <strong style="font-weight:600;color:#f7f8f7">no in-person appointment is required</strong> at any stage. Electronic documents are faster and easier to keep secure, so that is our default, but if you would rather work from paper we will happily process hard copies.</p>
+    </div>
+
+    <div data-cols="2" style="margin-top:48px;display:grid;gap:16px;grid-template-columns:1fr 1fr">
+      <div style="border:1px solid rgba(46,147,60,0.35);border-radius:16px;background:rgba(46,147,60,0.12);padding:24px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="display:flex;height:36px;width:36px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.25)"><span style="{{ iconLaptop }}"></span></span>
+          <p style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700">Electronic — preferred</p>
+        </div>
+        <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">Upload your documents through our secure client portal. It is faster, nothing can be lost in the post, and you keep a timestamped record of everything you sent.</p>
+      </div>
+      <div style="border:1px solid rgba(247,248,247,0.15);border-radius:16px;background:rgba(247,248,247,0.05);padding:24px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="display:flex;height:36px;width:36px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(247,248,247,0.1)"><span style="{{ iconMail }}"></span></span>
+          <p style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700">Hard copy — also fine</p>
+        </div>
+        <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">Mail or drop off paper forms and we will process them exactly the same way. Call or text 1 (936) 337-5446 first so we can tell you where to send them and watch for their arrival.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:64px">
+      <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:clamp(23px,2.4vw,30px);font-weight:800">How it works</h3>
+      <ol data-cols="4" style="margin:28px 0 0;padding:0;list-style:none;display:grid;gap:24px;grid-template-columns:repeat(4,minmax(0,1fr))">
+        <li style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <span style="font-family:'Nunito Sans',sans-serif;font-size:14px;font-weight:700;color:#39b54a">Step 1</span>
+          <p style="margin:8px 0 0;font-weight:600">Send your documents</p>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">Upload everything through our secure client portal, or drop off / mail hard copies if that suits you better. No appointment and no office visit is required at any point.</p>
+        </li>
+        <li style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <span style="font-family:'Nunito Sans',sans-serif;font-size:14px;font-weight:700;color:#39b54a">Step 2</span>
+          <p style="margin:8px 0 0;font-weight:600">We review and follow up</p>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">We read through what you have sent and come back with a short list of anything missing or unclear. Most returns need one round of follow-up; answering it quickly is what keeps the timeline short.</p>
+        </li>
+        <li style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <span style="font-family:'Nunito Sans',sans-serif;font-size:14px;font-weight:700;color:#39b54a">Step 3</span>
+          <p style="margin:8px 0 0;font-weight:600">Preparation and your review</p>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">We prepare the return and send it to you with a summary of the outcome and anything worth noting for next year. Nothing is filed until you have read it and approved it.</p>
+        </li>
+        <li style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <span style="font-family:'Nunito Sans',sans-serif;font-size:14px;font-weight:700;color:#39b54a">Step 4</span>
+          <p style="margin:8px 0 0;font-weight:600">E-file and confirmation</p>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">Once you sign, we e-file and send you confirmation along with a complete copy of the return for your records.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div style="margin-top:64px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="{{ iconClock }}"></span>
+        <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:clamp(23px,2.4vw,30px);font-weight:800">Typical turnaround</h3>
+      </div>
+      <p style="margin:12px 0 0;max-width:48rem;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">Timings are business days measured from the point where we have a <strong style="font-weight:600;color:#f7f8f7">complete</strong> set of documents — not from your first message. A missing form is the usual reason a return takes longer than expected.</p>
+      <div data-cols="3" style="margin-top:28px;display:grid;gap:16px;grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <p style="margin:0;font-size:14px;font-weight:600;color:rgba(247,248,247,0.8)">Straightforward return</p>
+          <p style="margin:8px 0 0;font-family:'Nunito Sans',sans-serif;font-size:22px;font-weight:800;color:#39b54a">5 – 7 business days</p>
+          <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">W-2 income, standard deduction, common credits. Prepared and back to you for review within about a week of receiving a complete set of documents.</p>
+        </div>
+        <div style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <p style="margin:0;font-size:14px;font-weight:600;color:rgba(247,248,247,0.8)">Itemized or multi-source</p>
+          <p style="margin:8px 0 0;font-family:'Nunito Sans',sans-serif;font-size:22px;font-weight:800;color:#39b54a">7 – 12 business days</p>
+          <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">Itemized deductions, investment or rental income, multiple states, or self-employment income on Schedule C.</p>
+        </div>
+        <div style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <p style="margin:0;font-size:14px;font-weight:600;color:rgba(247,248,247,0.8)">Owner return with the business</p>
+          <p style="margin:8px 0 0;font-family:'Nunito Sans',sans-serif;font-size:22px;font-weight:800;color:#39b54a">Alongside the business filing</p>
+          <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">When we also prepare your business return, the personal return follows it, since the figures flow from one to the other.</p>
+        </div>
+      </div>
+      <p style="margin:20px 0 0;max-width:48rem;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.6)">Filing deadlines are fixed, and the weeks immediately before them are the busiest of the year. If you send documents close to a deadline we will tell you honestly whether the return can be filed in time or whether an extension is the sensible route — an extension moves the filing date, not the payment date.</p>
+    </div>
+
+    <div style="margin-top:64px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="{{ iconFileText }}"></span>
+        <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:clamp(23px,2.4vw,30px);font-weight:800">What to send us</h3>
+      </div>
+      <p style="margin:12px 0 0;max-width:48rem;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">Send what you have and we will tell you what is missing — you do not need every item below. Most individual returns are built from the first two groups.</p>
+      <div data-cols="2" style="margin-top:28px;display:grid;gap:24px;grid-template-columns:1fr 1fr">
+        <div style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <p style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700">Identity and basics</p>
+          <ul style="margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px">
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Full legal name, date of birth, and Social Security number for you, your spouse, and any dependents</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Current mailing address and best contact number</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Last year's filed tax return, if we did not prepare it</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Bank routing and account number for direct deposit or payment</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">IRS Identity Protection PIN, if one has been issued to you</span></li>
+          </ul>
+        </div>
+        <div style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <p style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700">Income</p>
+          <ul style="margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px">
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">W-2 forms from each employer</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">1099-NEC or 1099-MISC for contract and freelance work</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">1099-INT, 1099-DIV, and 1099-B for interest, dividends, and investment sales</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">1099-R for retirement plan and pension distributions</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">SSA-1099 for Social Security benefits</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">1099-G for unemployment compensation or state tax refunds</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">K-1 statements from partnerships, S corporations, estates, or trusts</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Records of rental income and expenses, if you own rental property</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Records of self-employment income and expenses not reported on a 1099</span></li>
+          </ul>
+        </div>
+        <div style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <p style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700">Deductions and credits</p>
+          <p style="margin:6px 0 0;font-size:12px;line-height:1.7;color:rgba(247,248,247,0.55)">Only what applies to you — most people need just a few of these.</p>
+          <ul style="margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px">
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">1098 mortgage interest statement and property tax records</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">1098-T tuition statement and 1098-E student loan interest</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">1095-A if you had Marketplace health coverage</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Childcare provider details, including their tax ID, and amounts paid</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Charitable contribution receipts, cash and non-cash</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Records of estimated tax payments made during the year</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Retirement contributions to an IRA or HSA</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Medical expenses, if they were unusually high this year</span></li>
+          </ul>
+        </div>
+        <div style="border:1px solid rgba(247,248,247,0.12);border-radius:16px;background:rgba(247,248,247,0.04);padding:24px">
+          <p style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:700">Life changes worth telling us about</p>
+          <p style="margin:6px 0 0;font-size:12px;line-height:1.7;color:rgba(247,248,247,0.55)">These often change the outcome, and they are easy to forget to mention.</p>
+          <ul style="margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px">
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Marriage, divorce, or a change in filing status</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">A new dependent, or a dependent who is no longer one</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Buying or selling a home</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Moving to or from another state</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">Starting or closing a business</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="{{ dot }}"></span><span style="font-size:14px;line-height:1.7;color:rgba(247,248,247,0.75)">An inheritance, or a significant gift given or received</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px;display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+      <a href="Contact.dc.html" style="display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 28px;border-radius:9999px;background:#2e933c;color:#fff;font-size:16px;font-weight:600;text-decoration:none" style-hover="background:#257430">Start My Individual Return <span style="{{ arrowWhite }}"></span></a>
+      <a href="tel:19363375446" style="display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 28px;border-radius:9999px;border:1px solid rgba(247,248,247,0.25);color:#f7f8f7;font-size:16px;font-weight:500;text-decoration:none" style-hover="background:rgba(247,248,247,0.1)"><span style="{{ phoneLight }}"></span>1 (936) 337-5446</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="border-top:1px solid #eceeec;padding:clamp(56px,8vw,96px) 0;scroll-margin-top:96px">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <div style="max-width:42rem;margin:0 auto;text-align:center">
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Frequently Asked Questions</p>
+      <h2 style="margin:16px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(30px,4vw,48px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210;text-wrap:balance">Answers before you ask</h2>
+      <p style="margin:16px 0 0;font-size:16px;line-height:1.7;color:#454e46">The questions we hear most from business owners considering Nuumeric. Don't see yours? Call or text 1 (936) 337-5446.</p>
+    </div>
+    <div style="margin:48px auto 0;max-width:48rem;border:1px solid #eceeec;border-radius:16px;background:#fff;padding:0 24px;box-shadow:0 1px 2px rgba(0,0,0,0.04)">
+      <sc-for list="{{ faqs }}" as="faq" hint-placeholder-count="6">
+        <div style="{{ faq.itemStyle }}">
+          <button type="button" onClick="{{ faq.toggle }}" style="display:flex;width:100%;align-items:center;justify-content:space-between;gap:16px;background:none;border:0;padding:20px 0;text-align:left;font-family:'Inter',sans-serif;font-size:16px;font-weight:600;color:#101210;cursor:pointer">
+            {{ faq.question }}
+            <span style="{{ faq.chevronStyle }}"></span>
+          </button>
+          <sc-if value="{{ faq.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0;padding:0 0 20px;font-size:14px;line-height:1.7;color:#454e46">{{ faq.answer }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid #eceeec;background:#f7f8f7;padding:clamp(52px,7vw,80px) 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);text-align:center">
+    <h2 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:clamp(27px,3.2vw,40px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210;text-wrap:balance">Not sure where to start?</h2>
+    <p style="margin:12px auto 0;max-width:36rem;font-size:16px;line-height:1.7;color:#454e46">Call or text 1 (936) 337-5446 and we'll help you figure out the right level of support — no obligation.</p>
+    <div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px">
+      <a href="Contact.dc.html" style="display:inline-flex;align-items:center;height:48px;padding:0 clamp(20px,3vw,32px);border-radius:9999px;background:#39b54a;color:#fff;font-size:16px;font-weight:600;text-decoration:none" style-hover="background:#2e933c">Get a Quote Today</a>
+      <a href="tel:19363375446" style="display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 clamp(20px,3vw,32px);border-radius:9999px;border:1px solid rgba(46,147,60,0.4);color:#2e933c;font-size:16px;font-weight:600;text-decoration:none" style-hover="background:#2e933c;color:#fff"><span style="{{ phonePrimary }}"></span>1 (936) 337-5446</a>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,460px"></dc-import>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="12" fill="#39b54a"/><path d="M36 70V30l28 40V30" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></template>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+function mask(name, size, color) {
+  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
+}
+
+const FAQS = [
+  { id: "pricing", question: "How much do your services cost?", answer: "Every engagement is quoted individually, because no two businesses need the same level of support. After a short conversation about your volume, tools, and goals, we provide a tailored flat-rate quote — no hourly surprises, and you can scale services up or down as your needs change. Request a quote and we'll respond within one business day." },
+  { id: "getting-started", question: "What does getting started look like?", answer: "We begin with a brief discovery call to understand your business, then review the current state of your books. If catch-up or clean-up work is needed, we handle that first so you start from a clean baseline. Most clients are fully onboarded within one to two weeks." },
+  { id: "switching", question: "Can you take over from our current bookkeeper or software?", answer: "Yes. We regularly take over books mid-year and migrate clients between platforms. As certified advisors for QuickBooks, Xero, and Zoho, we can either work in your existing system or recommend and manage a migration if a different platform would serve you better." },
+  { id: "individual-returns", question: "Do you prepare individual tax returns, or only business returns?", answer: "We prepare both. Alongside small business returns, we handle individual (personal) returns — including for business owners whose personal filing depends on how the business year closed. Keeping both with one preparer means the figures that flow from your business to your personal return are consistent, and you are not coordinating between two firms at the busiest time of year. We also prepare individual returns for people who are not bookkeeping clients." },
+  { id: "individual-remote", question: "Do I need to come into the office to have my tax return prepared?", answer: "No. Individual returns are handled entirely remotely, and no in-person appointment is required at any stage. We prefer to collect everything electronically through our secure client portal, because it is faster and nothing can go missing in the post. That said, we understand not everyone wants to work that way — if you would rather send paper forms and statements, we will process hard copies just the same. Call or text us first so we know to watch for them." },
+  { id: "individual-turnaround", question: "How long does an individual tax return take?", answer: "A straightforward return — W-2 income, standard deduction, common credits — is usually prepared and back to you for review within five to seven business days. Returns with itemized deductions, investment or rental income, multiple states, or self-employment income typically take seven to twelve. Those timings start from the point we have a complete set of documents, not from your first message, so a single missing form is the usual reason a return takes longer than expected. If you come to us close to a filing deadline we will tell you honestly whether it can be filed in time or whether an extension makes more sense — and note that an extension moves the filing date, not the payment date." },
+  { id: "why-bookkeeper", question: "What does a bookkeeper provide to my business that I can't do myself?", answer: "Honestly? Nothing you couldn't do yourself — the same way you could cut your own hair. The real question is whether you should. A professional bookkeeper brings three things that are hard to replicate: time (the hours you spend reconciling are hours not spent selling), accuracy (we catch miscategorized expenses, duplicate charges, and missed deductions that quietly cost you money), and perspective (clean books reveal trends — shrinking margins, creeping costs — while there's still time to act). Most owners who hand off their books tell us the same thing: they wish they'd done it sooner." },
+  { id: "software-benefits", question: "What are the benefits of using bookkeeping software or apps?", answer: "Modern platforms like QuickBooks, Xero, and Zoho Books do the heavy lifting that used to fill shoeboxes: they pull transactions straight from your bank, match receipts automatically, invoice your customers, and keep everything in one searchable place. The result is fewer errors, faster month-end closes, and reports you can pull on demand instead of waiting for tax season. The catch is that software is only as good as its setup and upkeep — a misconfigured chart of accounts produces very tidy-looking wrong numbers. That's where we come in: we set the system up correctly, keep it maintained, and make sure the automation works for you rather than against you." },
+  { id: "real-time-data", question: "Will I see my data in real time?", answer: "Yes — that's one of the best parts of cloud-based bookkeeping. Your books live in your accounting platform, not on our hard drive, so you can log in any time from your laptop or phone and see the same numbers we see. Bank feeds sync transactions daily, and we keep everything reconciled on a regular schedule, so what you're looking at is current — not a snapshot from three months ago. You own your data and your account; we're simply the ones keeping it accurate." },
+  { id: "training", question: "Do you provide training?", answer: "Yes — with one clarification. We don't teach bookkeeping as a discipline, but we absolutely teach you and your team how to use your bookkeeping systems. Whether it's running reports in QuickBooks, sending invoices from Xero, or navigating Zoho Books, we'll walk you through the parts of the platform you need day to day, so the software works for you instead of intimidating you. Think of it this way: we handle the accounting; we make sure you're comfortable with the tools." },
+  { id: "sales-channel-reports", question: "Doesn't my sales channels' tools provide all that I need to generate financial reports?", answer: "They're a great start, but they only tell part of the story. Shopify, Amazon, Square, and similar platforms report what happened inside their own walls — sales, refunds, and their own fees. What they can't see is everything else: payroll, rent, insurance, software subscriptions, loan payments, inventory purchased elsewhere, and how it all rolls up into actual profit. Real financial reports reconcile every channel against your bank accounts and expenses in one place — that's how you learn not just what you sold, but what you kept. If you sell across multiple channels, consolidated books aren't a luxury; they're the only way to see the whole picture." },
+  { id: "software", question: "Which accounting and payroll platforms do you support?", answer: "We are a Zoho Finance Advisor, Xero Advisor, and QuickBooks ProAdvisor, and we process payroll through Gusto and SurePayroll as certified partners. If you use something else, ask — chances are we've worked with it." },
+  { id: "us-based", question: "Is your team really US-based?", answer: "Yes — all work is performed by our US-based team. Your books are never outsourced overseas, and you communicate directly with the people doing the work, led personally by Leigh Ann Smith." },
+  { id: "security", question: "How do you keep our financial data secure?", answer: "Nuumeric is insured and bondable, and a Certificate of Insurance (COI) is available upon request. We work inside your accounting platforms using bank-level encrypted connections and least-privilege access, and we never store your credentials in plain text." },
+  { id: "industries", question: "Do you work with businesses in my industry?", answer: "We serve a wide range of industries, including medical and professional practices, wholesale distributors, auto repair shops, restaurants, B2B service companies, and online retailers. If your industry isn't listed, reach out — our processes adapt to almost any small or mid-sized business." },
+  { id: "communication", question: "How often will we hear from you?", answer: "As often as you'd like. Most clients receive monthly financial reports with a summary of what changed and why, and you can call or text 1 (936) 337-5446 any time a question comes up — you'll reach a real person, not a ticket queue." },
+];
+
+class Component extends DCLogic {
+  state = { openFaq: null };
+
+  renderVals() {
+    return {
+      arrowWhite: mask("arrow-right", 16, "#ffffff"),
+      arrowSmall: mask("arrow-right", 14, "currentColor"),
+      check: mask("check", 12, "#2e933c"),
+      checkWrap: "margin-top:2px;display:flex;height:20px;width:20px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.12)",
+      dot: "margin-top:7px;height:6px;width:6px;flex:none;border-radius:9999px;background:#39b54a",
+      iconLaptop: mask("laptop", 16, "#39b54a"),
+      iconMail: mask("mail", 16, "#39b54a"),
+      iconClock: mask("clock", 20, "#39b54a"),
+      iconFileText: mask("file-text", 20, "#39b54a"),
+      phoneLight: mask("phone", 16, "#f7f8f7"),
+      phonePrimary: mask("phone", 16, "currentColor"),
+      faqs: FAQS.map((f, i) => {
+        const open = this.state.openFaq === f.id;
+        return {
+          question: f.question,
+          answer: f.answer,
+          open,
+          itemStyle: `border-bottom:${i === FAQS.length - 1 ? "0" : "1px solid rgba(236,238,236,0.9)"}`,
+          chevronStyle: mask(open ? "chevron-up" : "chevron-down", 18, "#454e46"),
+          toggle: () => this.setState(s => ({ openFaq: s.openFaq === f.id ? null : f.id })),
+        };
+      }),
+    };
+  }
+}
+</script>
+</body>
+</html>

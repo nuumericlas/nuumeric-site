@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/colors.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/typography.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/styles.css">
+<script src="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/_ds_bundle.js"></script>
+<style>
+  body { margin:0; background:#fff; color:#101210; font-family:'Inter',ui-sans-serif,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:#2e933c; }
+  a:hover { color:#257430; }
+  input, textarea, select { font-family:'Inter',sans-serif; }
+  input:focus, textarea:focus, select:focus { outline:none; border-color:#39b54a; box-shadow:0 0 0 3px rgba(57,181,74,0.25); }
+
+  @media (max-width:1023px){
+    [data-split]{grid-template-columns:1fr!important;gap:40px!important}
+    [data-cols="4"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-cols="3"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-sticky]{position:static!important}
+  }
+  @media (max-width:639px){
+    [data-cols]{grid-template-columns:1fr!important}
+    [data-cols]>*{grid-column:auto!important}
+  }
+</style>
+</helmet>
+
+<dc-import name="SiteNav" active="contact" dark-hero="{{ true }}" hint-size="100%,72px"></dc-import>
+
+<section style="background:#1c211c;color:#f7f8f7;padding:clamp(112px,13vw,160px) 0 clamp(52px,7vw,80px)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Contact &amp; Quote Request</p>
+    <h1 style="margin:16px 0 0;max-width:48rem;font-family:'Nunito Sans',sans-serif;font-size:clamp(34px,5.2vw,64px);font-weight:800;line-height:1.08;letter-spacing:-0.02em;text-wrap:balance">Let's get your numbers working for you</h1>
+    <p style="margin:20px 0 0;max-width:42rem;font-size:18px;line-height:1.7;color:rgba(247,248,247,0.75)">Tell us a little about your business and what you need. We'll reply with a tailored quote — usually within one business day.</p>
+  </div>
+</section>
+
+<section style="padding:clamp(52px,7vw,80px) 0">
+  <div data-split style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);display:grid;gap:56px;grid-template-columns:1fr 1.4fr">
+    <div>
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Reach Us Directly</p>
+      <h2 style="margin:12px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-0.02em;color:#101210">Prefer to talk it through?</h2>
+      <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:#454e46">Call or text and you'll reach a real person who can answer your questions on the spot.</p>
+
+      <a href="tel:19363375446" style="margin-top:32px;display:flex;align-items:center;gap:16px;border:1px solid rgba(57,181,74,0.4);border-radius:10px;background:rgba(57,181,74,0.08);padding:24px;text-decoration:none" style-hover="background:rgba(57,181,74,0.15)">
+        <span style="display:flex;height:48px;width:48px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(57,181,74,0.2)"><span style="{{ iconPhoneBig }}"></span></span>
+        <span>
+          <span style="display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.16em;color:#454e46">Call or Text</span>
+          <span style="display:block;margin-top:2px;font-family:'Nunito Sans',sans-serif;font-size:clamp(23px,2.4vw,30px);font-weight:800;color:#101210">1 (936) 337-5446</span>
+        </span>
+      </a>
+
+      <div style="margin-top:24px;border:1px solid #eceeec;border-radius:10px;background:rgba(247,248,247,0.7);padding:24px">
+        <address style="display:flex;gap:16px;font-style:normal">
+          <span style="{{ iconPin }}"></span>
+          <div>
+            <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.16em;color:#454e46">Office</p>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Nuumeric%20Inc%2C%208501%20Tower%20Point%20Dr%2C%20Ste%20B14%2C%20Charlotte%2C%20NC%2028227" target="_blank" rel="noopener noreferrer" style="margin-top:4px;display:block;font-size:16px;font-weight:600;line-height:1.4;color:#101210;text-decoration:none" style-hover="color:#2e933c">8501 Tower Point Dr, Ste B14<br>Charlotte, NC 28227</a>
+            <p style="margin:6px 0 0;font-size:12px;color:#454e46">Visits by appointment — please call ahead.</p>
+          </div>
+        </address>
+        <div style="margin-top:20px;display:flex;gap:16px;border-top:1px solid #eceeec;padding-top:20px">
+          <span style="{{ iconClock }}"></span>
+          <div>
+            <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.16em;color:#454e46">Hours</p>
+            <p style="margin:4px 0 0;font-size:16px;font-weight:600;line-height:1.4;color:#101210">Monday – Friday<br>9:00 AM – 5:00 PM Eastern Time</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;gap:16px">
+          <span style="{{ iconPin }}"></span>
+          <div>
+            <p style="margin:0;font-size:14px;font-weight:600;color:#101210">US-Based Team</p>
+            <p style="margin:2px 0 0;font-size:14px;color:#454e46">All work is performed by team members based in the United States.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:16px">
+          <span style="{{ iconSend }}"></span>
+          <div>
+            <p style="margin:0;font-size:14px;font-weight:600;color:#101210">Fast Response</p>
+            <p style="margin:2px 0 0;font-size:14px;color:#454e46">Quote requests are typically answered within one business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;height:100%;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(46,147,60,0.2);border-radius:16px;background:#f7f8f7;padding:48px;text-align:center">
+          <span style="display:flex;height:64px;width:64px;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.1)"><span style="{{ iconCheckBig }}"></span></span>
+          <h3 style="margin:24px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(23px,2.4vw,30px);font-weight:800;color:#101210">Request received</h3>
+          <p style="margin:12px 0 0;max-width:28rem;font-size:14px;line-height:1.7;color:#454e46">Thank you. We've received your quote request and will be in touch shortly. If it's urgent, call or text 1 (936) 337-5446.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ onSubmit }}" style="border:1px solid #eceeec;border-radius:16px;background:#fff;padding:clamp(24px,3vw,40px);box-shadow:0 2px 20px -8px rgba(0,0,0,0.08)">
+          <h2 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:clamp(23px,2.4vw,30px);font-weight:800;letter-spacing:-0.02em;color:#101210">Request a Quote</h2>
+          <p style="margin:8px 0 0;font-size:14px;color:#454e46">Fields marked * are required.</p>
+
+          <div data-cols="2" style="margin-top:32px;display:grid;gap:24px;grid-template-columns:1fr 1fr">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label for="name" style="font-size:14px;font-weight:500;color:#101210">Name *</label>
+              <input id="name" name="name" autocomplete="name" placeholder="Jane Smith" style="height:40px;border:1px solid #d7dbd7;border-radius:6px;padding:0 12px;font-size:14px;color:#101210;background:#fff">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label for="email" style="font-size:14px;font-weight:500;color:#101210">Email *</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" style="height:40px;border:1px solid #d7dbd7;border-radius:6px;padding:0 12px;font-size:14px;color:#101210;background:#fff">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label for="phone" style="font-size:14px;font-weight:500;color:#101210">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" style="height:40px;border:1px solid #d7dbd7;border-radius:6px;padding:0 12px;font-size:14px;color:#101210;background:#fff">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label for="service" style="font-size:14px;font-weight:500;color:#101210">Service Needed *</label>
+              <select id="service" name="service" style="height:40px;width:100%;border:1px solid #d7dbd7;border-radius:6px;padding:0 10px;font-size:14px;color:#101210;background:#fff">
+                <option value="">Select a service</option>
+                <option>Bookkeeping</option>
+                <option>Business Tax Preparation</option>
+                <option>Individual Tax Return</option>
+                <option>Payroll Processing</option>
+                <option>Zoho CRM / Sites Support</option>
+                <option>Xero Support</option>
+                <option>QuickBooks Support</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;grid-column:span 2">
+              <label for="message" style="font-size:14px;font-weight:500;color:#101210">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us a bit about your business and what you're looking for…" style="border:1px solid #d7dbd7;border-radius:6px;padding:10px 12px;font-size:14px;line-height:1.6;color:#101210;background:#fff;resize:vertical"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" style="margin-top:32px;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 40px;border:0;border-radius:9999px;background:#2e933c;color:#fff;font-family:'Inter',sans-serif;font-size:16px;font-weight:600;cursor:pointer" style-hover="background:#257430">
+            <span style="{{ iconSendWhite }}"></span>
+            Send Quote Request
+          </button>
+        </form>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,460px"></dc-import>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="12" fill="#39b54a"/><path d="M36 70V30l28 40V30" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></template>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+function mask(name, size, color) {
+  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
+}
+
+class Component extends DCLogic {
+  state = { submitted: false };
+
+  renderVals() {
+    return {
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      onSubmit: e => {
+        e.preventDefault();
+        this.setState({ submitted: true });
+      },
+      iconPhoneBig: mask("phone", 22, "#2e933c"),
+      iconPin: mask("map-pin", 20, "#2e933c") + ";margin-top:2px",
+      iconClock: mask("clock", 20, "#2e933c") + ";margin-top:2px",
+      iconSend: mask("send", 20, "#2e933c") + ";margin-top:2px",
+      iconSendWhite: mask("send", 16, "#ffffff"),
+      iconCheckBig: mask("circle-check-big", 32, "#2e933c"),
+    };
+  }
+}
+</script>
+</body>
+</html>

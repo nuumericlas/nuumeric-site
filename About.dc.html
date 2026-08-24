@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/colors.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/typography.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/styles.css">
+<script src="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  body { margin:0; background:#fff; color:#101210; font-family:'Inter',ui-sans-serif,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:#2e933c; }
+  a:hover { color:#257430; }
+
+  @media (max-width:1023px){
+    [data-split]{grid-template-columns:1fr!important;gap:40px!important}
+    [data-cols="4"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-cols="3"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    [data-sticky]{position:static!important}
+  }
+  @media (max-width:639px){
+    [data-cols]{grid-template-columns:1fr!important}
+    [data-cols]>*{grid-column:auto!important}
+  }
+</style>
+</helmet>
+
+<dc-import name="SiteNav" active="about" dark-hero="{{ true }}" hint-size="100%,72px"></dc-import>
+
+<section style="background:#1c211c;color:#f7f8f7;padding:clamp(112px,13vw,160px) 0 clamp(52px,7vw,80px)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">About Us</p>
+    <h1 style="margin:16px 0 0;max-width:48rem;font-family:'Nunito Sans',sans-serif;font-size:clamp(34px,5.2vw,64px);font-weight:800;line-height:1.08;letter-spacing:-0.02em;text-wrap:balance">Your trusted partner in the numbers</h1>
+    <p style="margin:20px 0 0;max-width:42rem;font-size:18px;line-height:1.7;color:rgba(247,248,247,0.75)">Nuumeric pairs certified expertise with the perspective of someone who has actually run businesses — because clarity in your finances should come from experience, not just software.</p>
+  </div>
+</section>
+
+<section style="padding:clamp(56px,8vw,96px) 0">
+  <div data-split style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);display:grid;align-items:start;gap:56px;grid-template-columns:0.85fr 1.15fr">
+    <div data-sticky style="position:sticky;top:112px">
+      <div style="position:relative">
+        <div aria-hidden="true" style="position:absolute;inset:-12px;border:1px solid rgba(57,181,74,0.3);border-radius:16px;pointer-events:none"></div>
+        <div style="position:relative;aspect-ratio:4/5;width:100%;border-radius:10px;overflow:hidden;box-shadow:0 20px 45px -20px rgba(0,0,0,0.35)">
+          <image-slot id="about-leighann" shape="rect" fit="cover" placeholder="Drop the portrait of Leigh Ann Smith"></image-slot>
+        </div>
+      </div>
+      <div style="position:relative;margin-top:24px;border:1px solid #eceeec;border-radius:10px;background:#fff;padding:20px;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,0.04)">
+        <p style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:24px;font-weight:700;color:#101210">Leigh Ann Smith</p>
+        <p style="margin:4px 0 0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:#39b54a">President, Nuumeric Inc</p>
+      </div>
+    </div>
+
+    <div>
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Leadership</p>
+      <h2 style="margin:12px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(28px,3.6vw,44px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210;text-wrap:balance">More than 28 years of helping owners find clarity</h2>
+      <div style="margin-top:24px;display:flex;flex-direction:column;gap:20px;font-size:16px;line-height:1.7;color:#454e46">
+        <p style="margin:0">At <strong style="color:#101210">Nuumeric</strong>, you'll work directly with <strong style="color:#101210">Leigh Ann Smith</strong>, a trusted financial professional who has spent more than 28 years helping business owners simplify their finances and focus on growth.</p>
+        <p style="margin:0">Leigh Ann understands the challenges small businesses face because she's been in your shoes — running companies, managing teams, and balancing the demands of daily operations. From bookkeeping and payroll to tax planning and business strategy, she knows how to cut through complexity and deliver practical solutions that make a real difference.</p>
+        <p style="margin:0">Clients value her down-to-earth approach, clear communication, and commitment to their success. With Leigh Ann's guidance, you'll gain not just accurate numbers but the confidence and clarity to take your business where you want it to go.</p>
+      </div>
+
+      <div style="margin-top:40px;border-left:2px solid #39b54a;border-radius:10px;background:#f7f8f7;padding:28px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="{{ iconSparkles }}"></span>
+          <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:#39b54a">Our Story</p>
+        </div>
+        <p style="margin:12px 0 0;font-size:16px;line-height:1.7;color:rgba(16,18,16,0.85)">Founded in 2017 as <strong>Montgomery Bookkeeping Solutions</strong>, <strong>Nuumeric</strong> is the evolution of that practice. As our business has grown — expanding our services and the customers we serve — we've taken on a new name and identity to better reflect who we are today and where we're headed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid #eceeec;border-bottom:1px solid #eceeec;background:#f7f8f7;padding:clamp(52px,7vw,80px) 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px)">
+    <div style="max-width:42rem;margin:0 auto;text-align:center">
+      <p style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.22em;color:#39b54a">Why You Can Rely on Us</p>
+      <h2 style="margin:16px 0 0;font-family:'Nunito Sans',sans-serif;font-size:clamp(28px,3.6vw,44px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210;text-wrap:balance">Credentials that back the confidence</h2>
+    </div>
+    <div data-cols="2" style="margin-top:48px;display:grid;gap:24px;grid-template-columns:1fr 1fr">
+      <div style="display:flex;gap:20px;border:1px solid #eceeec;border-radius:10px;background:#fff;padding:28px;box-shadow:0 1px 2px rgba(0,0,0,0.04)">
+        <div style="display:flex;height:48px;width:48px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(46,147,60,0.08)"><span style="{{ iconShield }}"></span></div>
+        <div>
+          <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:24px;font-weight:700;color:#101210">Insured &amp; Bondable</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:#454e46">Nuumeric is insured and bondable. Our Certificate of Insurance (COI) is available upon request — because trust should be verifiable, not just promised.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;border:1px solid #eceeec;border-radius:10px;background:#fff;padding:28px;box-shadow:0 1px 2px rgba(0,0,0,0.04)">
+        <div style="display:flex;height:48px;width:48px;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:rgba(57,181,74,0.15)"><span style="{{ iconAward }}"></span></div>
+        <div>
+          <h3 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:24px;font-weight:700;color:#101210">Certified Expertise</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.7;color:#454e46">Zoho Finance Advisor, Xero Advisor, QuickBooks ProAdvisor, Gusto Payroll, and SurePayroll Accountant — credentials earned across the platforms your business already uses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dc-import name="CredentialsBar" variant="dark" hint-size="100%,84px"></dc-import>
+
+<section style="padding:clamp(52px,7vw,80px) 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,3vw,32px);text-align:center">
+    <h2 style="margin:0;font-family:'Nunito Sans',sans-serif;font-size:clamp(27px,3.2vw,40px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:#101210;text-wrap:balance">Let's talk about your back office</h2>
+    <p style="margin:12px auto 0;max-width:36rem;font-size:16px;line-height:1.7;color:#454e46">A short conversation is all it takes to see whether we're the right fit for your business.</p>
+    <a href="Contact.dc.html" style="margin-top:32px;display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 clamp(20px,3vw,32px);border-radius:9999px;background:#2e933c;color:#fff;font-size:16px;font-weight:600;text-decoration:none" style-hover="background:#257430">Get in Touch <span style="{{ arrowWhite }}"></span></a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,460px"></dc-import>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="12" fill="#39b54a"/><path d="M36 70V30l28 40V30" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></template>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+function mask(name, size, color) {
+  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
+}
+
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      arrowWhite: mask("arrow-right", 16, "#ffffff"),
+      iconSparkles: mask("sparkles", 18, "#39b54a"),
+      iconShield: mask("shield-check", 24, "#2e933c"),
+      iconAward: mask("award", 24, "#39b54a"),
+    };
+  }
+}
+</script>
+</body>
+</html>
