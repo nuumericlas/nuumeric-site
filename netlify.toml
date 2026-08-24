@@ -1,4 +1,7 @@
 [build]
+  # No package.json / build tooling — dist/ is pre-rendered static HTML committed to the repo.
+  # "true" overrides the UI's leftover "pnpm run build" command, which fails since there's no package.json.
+  command = "true"
   publish = "dist"
 
 # Each page is a folder index.html, so URLs are clean with no config:
