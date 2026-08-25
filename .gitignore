@@ -1,0 +1,9 @@
+# Local Netlify CLI state (dev server, emulated blobs/functions, local Postgres)
+.netlify/db/
+.netlify/blobs-serve/
+.netlify/functions-internal/
+.netlify/v1/
+.netlify/state.json
+deno.lock
+
+node_modules/
