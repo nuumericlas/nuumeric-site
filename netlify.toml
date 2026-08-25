@@ -1,5 +1,10 @@
 [build]
   publish = "dist"
+  # The site ships as a pre-bundled static `dist/` committed to the repo. There is no
+  # Vite/SSR source tree here, and the build image has no pnpm, so the UI's
+  # `pnpm run build` exits 127. This command overrides the UI setting and just
+  # asserts the bundle is present before publishing.
+  command = "test -f dist/index.html && echo 'Static bundle present in dist/ - nothing to compile.'"
 
 # Each page is a folder index.html, so URLs are clean with no config:
 #   /  /services  /about  /what-to-expect  /careers  /contact  /refer  /blog
