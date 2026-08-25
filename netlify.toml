@@ -1,4 +1,9 @@
 [build]
+  # The site is prebuilt: `dist/` is committed, so there is no bundler step to
+  # run here. Defining the command in netlify.toml also overrides the stale
+  # `pnpm run build` configured in the Netlify UI, which cannot work in this
+  # repo (no pnpm, no lockfile, and no sources for that script to compile).
+  command = "node scripts/prepare-images.mjs"
   publish = "dist"
 
 # Each page is a folder index.html, so URLs are clean with no config:
@@ -14,3 +19,9 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Image filenames carry a content hash, so the bytes at a given URL never change.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
