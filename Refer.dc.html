@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/styles.css">
 <script src="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/_ds_bundle.js"></script>
 <style>
+  html { overflow-x:clip; }
   body { margin:0; background:#fff; color:#101210; font-family:'Inter',ui-sans-serif,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
   a { color:#2e933c; }
   a:hover { color:#257430; }
@@ -26,10 +27,13 @@
     [data-cols="4"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
     [data-cols="3"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
     [data-sticky]{position:static!important}
+    input,select,textarea{font-size:16px!important;width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+    input,select{min-height:44px}
   }
   @media (max-width:639px){
     [data-cols]{grid-template-columns:1fr!important}
     [data-cols]>*{grid-column:auto!important}
+    [data-cols-sm="2"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
   }
 </style>
 </helmet>
@@ -153,7 +157,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 function mask(name, size, color) {
-  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  const url = `https://unpkg.com/lucide-static@0.544.0/icons/${name}.svg`;
   return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
 }
 
