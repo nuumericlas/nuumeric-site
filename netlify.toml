@@ -1,8 +1,13 @@
 [build]
+  command = "echo 'dist/ is a pre-built static export; no build step needed'"
   publish = "dist"
 
 # Each page is a folder index.html, so URLs are clean with no config:
 #   /  /services  /about  /what-to-expect  /careers  /contact  /refer  /blog
+#
+# dist/ ships pre-built in the repo (a static export from the design system),
+# since this project no longer contains the Vite/React app source
+# (client/, server/, vite.config.ts) that package.json's "build" script targets.
 
 [[headers]]
   for = "/*"
