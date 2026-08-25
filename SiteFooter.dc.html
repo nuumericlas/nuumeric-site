@@ -13,16 +13,27 @@
 <link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/tokens/spacing.css">
 <link rel="stylesheet" href="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/styles.css">
 <script src="_ds/nuumeric-design-system-358bec69-55e7-4868-9a4c-c115168774a8/_ds_bundle.js"></script>
+<style>
+  @media (max-width:1023px){
+    [data-footer-grid]{grid-template-columns:1fr 1fr!important;gap:40px 32px!important}
+    [data-footer-grid]>*:first-child{grid-column:1/-1}
+  }
+  @media (max-width:639px){
+    [data-footer-grid]{grid-template-columns:1fr!important;gap:36px!important}
+    [data-footer-bottom]{flex-direction:column;align-items:flex-start;gap:14px}
+    [data-footer-bottom] nav{gap:12px 20px}
+  }
+</style>
 </helmet>
 <footer style="background:#1c211c;color:#f7f8f7;font-family:var(--font-body)">
-  <div style="max-width:1280px;margin:0 auto;padding:64px 32px;display:grid;gap:48px;grid-template-columns:1.4fr 1fr 1fr">
+  <div data-footer-grid style="max-width:1280px;margin:0 auto;padding:clamp(48px,8vw,64px) clamp(20px,3vw,32px);display:grid;gap:48px;grid-template-columns:1.4fr 1fr 1fr">
     <div>
       <div style="display:flex;align-items:center;gap:10px">
         <img src="assets/logo-mark.png" alt="Nuumeric" style="height:36px;width:auto;display:block">
         <span style="font-family:var(--font-display);font-size:25px;font-weight:800;letter-spacing:-0.01em;line-height:1;color:#f7f8f7">NUUMERIC</span>
       </div>
       <p style="margin:14px 0 0;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.2em;color:#39b54a">Driving growth thru numbers &amp; insights</p>
-      <p style="margin:20px 0 0;max-width:24rem;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">US-based back-office support for growing enterprises — bookkeeping, business and individual tax preparation, payroll, and more. Formerly Montgomery Bookkeeping Solutions.</p>
+      <p style="margin:20px 0 0;max-width:34rem;font-size:14px;line-height:1.7;color:rgba(247,248,247,0.7)">US-based back-office support for growing enterprises — bookkeeping, business and individual tax preparation, payroll, and more. Formerly Montgomery Bookkeeping Solutions.</p>
       <div style="margin-top:24px;display:flex;align-items:center;gap:2px">
         <a href="https://www.linkedin.com/company/nuumeric/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display:inline-flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:9999px;opacity:.8" style-hover="opacity:1"><span style="{{ iconLinkedin }}"></span></a>
         <a href="https://www.instagram.com/nuumericinc" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="display:inline-flex;height:32px;width:32px;align-items:center;justify-content:center;border-radius:9999px;opacity:.8" style-hover="opacity:1"><span style="{{ iconInstagram }}"></span></a>
@@ -63,7 +74,7 @@
   </div>
 
   <div style="border-top:1px solid rgba(247,248,247,0.1)">
-    <div style="max-width:1280px;margin:0 auto;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:rgba(247,248,247,0.6)">
+    <div data-footer-bottom style="max-width:1280px;margin:0 auto;padding:24px clamp(20px,3vw,32px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:rgba(247,248,247,0.6)">
       <p style="margin:0">© 2026 Nuumeric Inc. All rights reserved.</p>
       <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:20px">
         <a href="#" style="color:inherit;text-decoration:none" style-hover="color:#39b54a">Privacy Policy</a>
@@ -77,7 +88,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:460}}">
 function mask(name, size, color) {
-  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  const url = `https://unpkg.com/lucide-static@0.544.0/icons/${name}.svg`;
   return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
 }
 

@@ -1,4 +1,9 @@
 [build]
+  # The site is a set of pre-bundled, self-contained static pages committed in
+  # dist/ — there is no source tree to compile here, so the build is a no-op.
+  # Defined in netlify.toml so it takes precedence over the build command
+  # configured in the Netlify UI.
+  command = "echo 'No build step: dist/ contains the pre-bundled static site.'"
   publish = "dist"
 
 # Each page is a folder index.html, so URLs are clean with no config:

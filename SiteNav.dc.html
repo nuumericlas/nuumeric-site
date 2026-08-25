@@ -49,8 +49,8 @@
   </div>
 
   <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
-    <div style="border-top:1px solid #eceeec;background:#fff">
-      <nav style="max-width:1280px;margin:0 auto;padding:12px 24px;display:flex;flex-direction:column">
+    <div style="border-top:1px solid #eceeec;background:#fff;max-height:calc(100vh - 72px);overflow-y:auto;-webkit-overflow-scrolling:touch">
+      <nav style="max-width:1280px;margin:0 auto;padding:12px clamp(12px,4vw,24px);display:flex;flex-direction:column">
         <a href="Home.dc.html" style="{{ mobileLinkStyle }}">Home</a>
         <a href="Services.dc.html" style="{{ mobileLinkStyle }}">Services</a>
         <a href="About.dc.html" style="{{ mobileLinkStyle }}">About Us</a>
@@ -78,12 +78,16 @@ const INK_FG = "#f7f8f7";
 const FG = "#101210";
 
 function mask(name, size, color) {
-  const url = `https://unpkg.com/lucide-static@latest/icons/${name}.svg`;
+  const url = `https://unpkg.com/lucide-static@0.544.0/icons/${name}.svg`;
   return `display:inline-block;width:${size}px;height:${size}px;flex:none;background-color:${color};-webkit-mask:url(${url}) center/contain no-repeat;mask:url(${url}) center/contain no-repeat`;
 }
 
 class Component extends DCLogic {
-  state = { scrolled: false, mobileOpen: false, narrow: false };
+  state = {
+    scrolled: false,
+    mobileOpen: false,
+    narrow: typeof window !== "undefined" && window.matchMedia("(max-width: 1023px)").matches,
+  };
 
   componentDidMount() {
     this._onScroll = () => {
@@ -127,7 +131,7 @@ class Component extends DCLogic {
           ? "background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 0 #eceeec,0 8px 30px -18px rgba(0,0,0,.25)"
           : "background:transparent"
       }`,
-      barStyle: `max-width:1280px;margin:0 auto;padding:0 ${narrow ? 20 : 32}px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px`,
+      barStyle: `max-width:min(1280px,100vw);margin:0 auto;padding:0 ${narrow ? 20 : 32}px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px`,
       wordmarkStyle: `font-family:var(--font-display);font-size:${narrow ? 20 : 23}px;font-weight:800;letter-spacing:-0.01em;line-height:1;color:${onDark ? INK_FG : FG}`,
       desktopNavStyle: narrow ? "display:none" : "display:flex;align-items:center;gap:2px",
       desktopActionsStyle: narrow ? "display:none" : "display:flex;align-items:center;gap:10px",
