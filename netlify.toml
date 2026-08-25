@@ -1,5 +1,10 @@
 [build]
   publish = "dist"
+  # The deployable site is the pre-rendered HTML committed in dist/, so there is
+  # no compile step here. The previous command (`pnpm run build`, set in the UI)
+  # failed with "pnpm: command not found" because this repo ships no pnpm
+  # lockfile, so the build image never provisions pnpm.
+  command = "test -f dist/index.html && echo 'Pre-rendered site: publishing dist/ as-is'"
 
 # Each page is a folder index.html, so URLs are clean with no config:
 #   /  /services  /about  /what-to-expect  /careers  /contact  /refer  /blog
